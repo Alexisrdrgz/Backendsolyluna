@@ -6,7 +6,7 @@ import cors from "cors";
 // const cors = require('cors')
 import path from "path";
 import mongoose from "mongoose";
-import router from "./routes";
+import router from "./routes/index";
 
 //conexion
 mongoose.Promise = global.Promise;
