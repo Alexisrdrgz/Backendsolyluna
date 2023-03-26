@@ -10,7 +10,7 @@ export default {
     if (
       response.rol == "Administrador" ||
       response.rol == "Vendedor" ||
-      response.rol == "Almacenista"
+      response.rol == "Almacenero"
     ) {
       next();
     } else {
@@ -41,7 +41,7 @@ export default {
       });
     }
     const response = await tokenService.decode(req.headers.token);
-    if (response.rol == "Administrador" || response.rol == "Almacenista") {
+    if (response.rol == "Administrador" || response.rol == "Almacenero") {
       next();
     } else {
       return res.status(403).send({
