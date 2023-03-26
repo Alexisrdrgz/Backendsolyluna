@@ -3,7 +3,7 @@ import CategoriaRouter from './Categoria'
 import articuloRouter from './articulo'
 import UsuarioRouter from './usuario';
 import PersonaRouter from './persona'
-import IngresoRouter from './ingresos'
+import IngresoRouter from './ingreso'
 import VentaRouter from './venta'
 const router = routerx();
 
