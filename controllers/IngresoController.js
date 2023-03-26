@@ -68,9 +68,8 @@ export default {
         { createdAt: 1 }
       )
         .populate("usuario", { nombre: 1 })
-        .populate("persona", { nombre: 1 });
-      sort({ createdAt: -1 });
-
+        .populate("persona", { nombre: 1 })
+      .sort({ createdAt: -1 });
       res.status(200).json(reg);
     } catch (e) {
       res.status(500).send({
